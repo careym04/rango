@@ -1,3 +1,9 @@
+from rango import views
+from django.contrib import admin
+from django.urls import path
+from django.urls import include
+
+
 """
 URL configuration for tango_with_django_project project.
 
@@ -19,4 +25,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rango/', include('rango.urls')),
+    path('',views.index, name ='index' )
 ]
