@@ -1,7 +1,7 @@
 from django import forms
 from rango.models import Page, Category
 
-# We could add these forms to views.py, but it makes sense to split them off into their own file.
+
 
 class CategoryForm(forms.ModelForm):
     name = forms.CharField(max_length=128, help_text="Please enter the category name.")
